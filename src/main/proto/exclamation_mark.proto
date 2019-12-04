@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "hu.veres.domokos.exclamation.mark";
+
+service ExclamationMarkService {
+    rpc GetExclamationMark(MessageRequest) returns (MessageResponse) {}
+}
+
+message MessageRequest {
+}
+
+message MessageResponse {
+    string message = 1;
+}
